@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.button{
+font-family: Poppins;
+font-size: 18px;
+font-weight: 600;
+line-height: 27px;
+letter-spacing: 0.25px;
+text-align: center;
+color:  rgba(52, 201, 75, 1);
+background-color:black;
+width: Hug (170px);
+height: Hug (47px);
+top: 13px;
+left: 1238px;
+padding: 0.5rem;
+border-radius: 12px;
+border: 1px;
+gap: 10px;
+cursor: pointer;
+
+}
+.button:hover{
+    cursor: pointer;
+}

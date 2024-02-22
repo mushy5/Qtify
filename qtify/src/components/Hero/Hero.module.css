@@ -1,0 +1,31 @@
+.herocontainer{
+    height: 212px;
+    width: 799px;
+   display: flex;
+   align-items: center;
+    justify-content: center;
+
+   
+}
+.heroParent{
+    height: 270px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(18, 18, 18, 1);
+}
+.heroText{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    font-weight: 600;
+  font-family: "Poppins";
+  font-size: 32px;
+
+    height: 100px;
+  color: #ffffff;
+  
+}
