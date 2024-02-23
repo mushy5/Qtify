@@ -2,6 +2,7 @@ import React from 'react';
 
 import {Tooltip,Chip} from '@mui/material';
 import styles from './Card.module.css';
+// Uninstalled react-router-dom, coz giving many errors in the browser.
 // import {Link } from 'react-router-dom';
 
 

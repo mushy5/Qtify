@@ -8,7 +8,7 @@ function App() {
   const dummydata = {
     image :"https://picsum.photos/200", 
     follows: 780,
-     title:"Nonsense project", 
+     title:"Testing project", 
      slug:"strident-analyst", 
      songs:[1,3,3,4,5,5]
   }
