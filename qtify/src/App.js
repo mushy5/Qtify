@@ -2,21 +2,34 @@ import React from 'react';
 import StyledEngineProvider from '@mui/material/StyledEngineProvider';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero'
-import Card from './components/Card/Card'
+import Section from './components/Section/Section';
+import { fetchTopAlbums } from './components/api/api';
+import { useEffect, useState } from 'react';
+
+import './App.css';
+
 
 function App() {
-  const dummydata = {
-    image :"https://picsum.photos/200", 
-    follows: 780,
-     title:"Testing project", 
-     slug:"strident-analyst", 
-     songs:[1,3,3,4,5,5]
+  const [data, setData] = useState([]);
+  // const {topAlbums=[]} = data;
+
+  const generateData = (func_toCall)=>{
+    func_toCall().then((fetcheddata)=>setData(fetcheddata));
   }
+
+  useEffect(()=>{
+    generateData(fetchTopAlbums);
+  }, []);
+ 
   return (
     <StyledEngineProvider injectFirst>
       <Navbar />
       <Hero />
-      <Card data={dummydata} type={'album'}/>
+      <div className="sectionsWrapper">
+        <Section sectionTitle={'Top Albums'} data={data} type={'album'}/>
+      </div>
+      
+      
     </StyledEngineProvider>
   );
 }

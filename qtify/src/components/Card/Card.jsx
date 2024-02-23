@@ -2,7 +2,6 @@ import React from 'react';
 
 import {Tooltip,Chip} from '@mui/material';
 import styles from './Card.module.css';
-// Uninstalled react-router-dom, coz giving many errors in the browser.
 // import {Link } from 'react-router-dom';
 
 
@@ -16,6 +15,7 @@ function Card({data, type}){
                 return (
                      <Tooltip title={`${songs.length} songs`} placement='top' arrow>
                         {/* <Link to={`/album/${slug}`}> */}
+                      
                             <div className={styles.wrapper}>
                                 <div className={styles.card}>
                                     <img src={image} alt="album" loading='lazy'/>
