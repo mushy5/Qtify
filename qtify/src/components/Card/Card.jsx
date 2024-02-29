@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Tooltip,Chip} from '@mui/material';
 import styles from './Card.module.css';
-// import {Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 
 
 
@@ -14,6 +14,7 @@ function Card({data, type}){
                 const {image, follows, title, slug, songs} = data;
                 return (
                      <Tooltip title={`${songs.length} songs`} placement='top' arrow>
+                        {/* Use link only after, implementing routes in app or index.js */}
                         {/* <Link to={`/album/${slug}`}> */}
                       
                             <div className={styles.wrapper}>
