@@ -19,7 +19,7 @@ export default function Section({sectionTitle, data, type}){
         <div className={styles.Album_header}>
             
              <h3>{sectionTitle}</h3>
-             <p className={styles.toogleText} onClick={sethandle}> {carouselToggle ? "Collapse" : "Show all"} </p>
+             <p className={styles.toogleText} onClick={sethandle}> {carouselToggle ? "Collapse" : "Show All"} </p>
 
             {/* <h4 className={styles.toogleText} onClick={sethandle}>
                 {carouselToggle ? "Collapse" : "Show all"}
